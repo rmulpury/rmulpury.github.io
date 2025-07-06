@@ -4,46 +4,60 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Ramana Mulpury</title>
-  <!-- Typography: Inter (Light 300) -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
   <style>
+    /* Typography: Menlo Ultra-Light (100 weight) */
     body {
-      margin: 0; /* remove default margin */
-      font-family: 'Inter', sans-serif;
-      font-weight: 300;
+      margin: 0;
+      font-family: 'Menlo', 'Consolas', 'Liberation Mono', monospace;
+      font-weight: 100;
       line-height: 1.6;
       font-size: 10pt;
+      word-spacing: 0.05em;
+      color: rgba(0,0,0,0.7); /* 70% black */ /* lightened text color */
       display: flex;
-      justify-content: center; /* center horizontally */
+      justify-content: center;
+      align-items: flex-start;
     }
     .content {
-      padding: 40px 20px; /* breathing room */
-      max-width: 640px; /* optimal reading width */
+      padding: 40px 20px;
+      max-width: 560px;
+      box-sizing: border-box;
     }
     h1 {
       margin-bottom: 24px;
+      font-family: 'Menlo', 'Consolas', 'Liberation Mono', monospace;
       font-size: 1.8rem;
-      font-weight: 600;
+      font-weight: 500;
+      color: #000; /* 100% black */ /* slightly darker for heading */
     }
-    /* Bullet style */
+
+    /* Custom bullet style with 2 character gap */
     ul {
-      list-style-type: disc;
-      list-style-position: outside;
-      margin: 0 0 0 1.2em; /* align under "R" */
+      list-style: none;
+      margin: 0;
       padding: 0;
     }
-    ul > li {
-      margin: 0 0 18px 0; /* ~one line space */
+    ul li {
+      position: relative;
+      padding-left: 2ch;
+      margin: 0 0 18px 0;
     }
+    ul li::before {
+      content: '\2022';
+      position: absolute;
+      left: 0;
+      top: 0;
+      font-weight: 600;
+      color: rgba(0,0,0,0.8);
+    }
+    /* Nested list indentation */
     li ul {
-      margin-left: 48px; /* double indent */
-      list-style-position: outside;
+      margin: 2px 0 0 2.4ch;
     }
     li ul li {
       margin: 2px 0;
     }
+
     a {
       color: inherit;
       text-decoration: underline;
@@ -66,7 +80,7 @@
         </ul>
       </li>
       <li>Built large-scale business applications, integrations, and analytics for Oracle, Applied Materials, Lucent, and Google across order-to-cash, procure-to-pay, compliance, sales, and marketing domains.</li>
-      <li>Applying <strong>Agentic Process Automation</strong> to boost productivity and unlock savings across entire organizations.</li>
+      <li>Applying Agentic AI and Process Automation to boost productivity and unlock savings across entire organizations.</li>
       <li>Conga Technologies sold to Dexian in 2025.</li>
       <li>Investor in startups:
         <ul>
