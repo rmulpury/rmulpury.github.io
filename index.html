@@ -10,11 +10,17 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
   <style>
     body {
-      margin: 40px;
+      margin: 0; /* remove default margin */
       font-family: 'Inter', sans-serif;
       font-weight: 300;
       line-height: 1.6;
       font-size: 10pt;
+      display: flex;
+      justify-content: center; /* center horizontally */
+    }
+    .content {
+      padding: 40px 20px; /* breathing room */
+      max-width: 640px; /* optimal reading width */
     }
     h1 {
       margin-bottom: 24px;
@@ -28,11 +34,9 @@
       margin: 0 0 0 1.2em; /* align under "R" */
       padding: 0;
     }
-    /* Top‑level bullets */
     ul > li {
       margin: 0 0 18px 0; /* ~one line space */
     }
-    /* Nested bullets */
     li ul {
       margin-left: 48px; /* double indent */
       list-style-position: outside;
@@ -50,28 +54,30 @@
   </style>
 </head>
 <body>
-  <h1>Ramana Mulpury</h1>
-  <ul>
-    <li>4× entrepreneur, founded the following companies:
-      <ul>
-        <li><a href="https://metricstream.com" target="_blank" rel="noopener">MetricStream</a></li>
-        <li><a href="http://www.opsdynamics.com" target="_blank" rel="noopener">OpsDynamics</a></li>
-        <li><a href="https://rule5.io" target="_blank" rel="noopener">Rule5&nbsp;AI</a></li>
-        <li><a href="https://congatech.com" target="_blank" rel="noopener">Conga&nbsp;Technologies</a> (1 exit)</li>
-      </ul>
-    </li>
-    <li>Built large-scale business applications, integrations, and analytics for Oracle, Applied Materials, Lucent, and Google across order‑to‑cash, procure‑to‑pay, compliance, sales, and marketing domains.</li>
-    <li>Applying <strong>Agentic Process Automation</strong> to boost productivity and unlock savings across entire organizations.</li>
-    <li>Conga Technologies sold to Dexian in 2025.</li>
-    <li>Investor in startups:
-      <ul>
-        <li><a href="https://scale.ai" target="_blank" rel="noopener">Scale AI</a></li>
-        <li><a href="https://project44.com" target="_blank" rel="noopener">Project44</a></li>
-        <li><a href="https://www.stord.com" target="_blank" rel="noopener">Stord</a></li>
-        <li><a href="https://www.qwikcilver.com" target="_blank" rel="noopener">Qwikcilver</a></li>
-      </ul>
-    </li>
-    <li><a href="mailto:ramana@mulpury.org">ramana@mulpury.org</a>&nbsp;|&nbsp;<a href="https://www.linkedin.com/in/ramana-mulpury-99558" target="_blank" rel="noopener">LinkedIn</a></li>
-  </ul>
+  <div class="content">
+    <h1>Ramana Mulpury</h1>
+    <ul>
+      <li>4× entrepreneur, founded the following companies:
+        <ul>
+          <li><a href="https://metricstream.com" target="_blank" rel="noopener">MetricStream</a></li>
+          <li><a href="http://www.opsdynamics.com" target="_blank" rel="noopener">OpsDynamics</a></li>
+          <li><a href="https://rule5.io" target="_blank" rel="noopener">Rule5&nbsp;AI</a></li>
+          <li><a href="https://congatech.com" target="_blank" rel="noopener">Conga&nbsp;Technologies</a> (1 exit)</li>
+        </ul>
+      </li>
+      <li>Built large-scale business applications, integrations, and analytics for Oracle, Applied Materials, Lucent, and Google across order-to-cash, procure-to-pay, compliance, sales, and marketing domains.</li>
+      <li>Applying <strong>Agentic Process Automation</strong> to boost productivity and unlock savings across entire organizations.</li>
+      <li>Conga Technologies sold to Dexian in 2025.</li>
+      <li>Investor in startups:
+        <ul>
+          <li><a href="https://scale.ai" target="_blank" rel="noopener">Scale AI</a></li>
+          <li><a href="https://project44.com" target="_blank" rel="noopener">Project44</a></li>
+          <li><a href="https://www.stord.com" target="_blank" rel="noopener">Stord</a></li>
+          <li><a href="https://www.qwikcilver.com" target="_blank" rel="noopener">Qwikcilver</a></li>
+        </ul>
+      </li>
+      <li><a href="mailto:ramana@mulpury.org">ramana@mulpury.org</a>&nbsp;|&nbsp;<a href="https://www.linkedin.com/in/ramana-mulpury-99558" target="_blank" rel="noopener">LinkedIn</a></li>
+    </ul>
+  </div>
 </body>
 </html>
